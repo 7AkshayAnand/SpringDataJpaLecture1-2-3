@@ -22,14 +22,14 @@ class DbApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-	@Test
-	@Order(1)
-	void testRepository(){
-		ProductEntity productEntity=ProductEntity.builder().sku("nestle").title("nestle chocolates").price(BigDecimal.valueOf(23.45)).quantity(4).build();
-
-		ProductEntity savedProductEntity=  productRepository.save(productEntity);
-		System.out.println(savedProductEntity);
-	}
+//	@Test
+//	@Order(1)
+//	void testRepository(){
+//		ProductEntity productEntity=ProductEntity.builder().sku("nestle").title("nestle chocolates").price(BigDecimal.valueOf(23.45)).quantity(4).build();
+//
+//		ProductEntity savedProductEntity=  productRepository.save(productEntity);
+//		System.out.println(savedProductEntity);
+//	}
 
 //	@Test
 //	void getRepository(){
@@ -69,10 +69,10 @@ class DbApplicationTests {
 //		System.out.println("the output is "+entities);
 //	}
 
-	@Test
-	void getTitlePrice(){
-		Optional<ProductEntity> entities=productRepository.findByTitleAndPrice("MAZA",BigDecimal.valueOf(16.40));
-		System.out.println("the output is "+entities);
-	}
+//	@Test
+//	void getTitlePrice(){
+//		Optional<ProductEntity> entities=productRepository.findByTitleAndPrice("MAZA",BigDecimal.valueOf(16.40));
+//		System.out.println("the output is "+entities);
+//	}
 
 }

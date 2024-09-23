@@ -1,6 +1,7 @@
 package com.example.akshay.Db.repository;
 
 import com.example.akshay.Db.entities.ProductEntity;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -23,4 +24,6 @@ public interface ProductRepository extends JpaRepository<ProductEntity,Long> {
 
    @Query("select e from ProductEntity e where e.title=?1 and e.price=?2")
    Optional<ProductEntity> findByTitleAndPrice(String title, BigDecimal price);
+
+    List<ProductEntity> findBy(Sort sort);
 }

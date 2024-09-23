@@ -1,7 +1,26 @@
 insert into test.product_table (price,quantity,sku,title_x)
 values
-(12.4,4,'parle734','Parle Buscuit' )
-,
+(12.4,4,'parle734','Parle Buscuit' ),
 (14.4,1,'pepsi123','Pepsi'),
-(16.4,3,'pepsi156','MAZA'),
-(16.7,7,'cocacola','COCACOLA');
+(16.4,3,'pepsi156','MAZAnew'),
+(16.7,7,'cocacola','COCACOLA'),
+(17.5, 2, 'pepsi189', 'Pepsilocal'),
+(18.3, 4, 'fanta234', 'Fanta'),
+(19.0, 5, 'sprite567', 'Sprite'),
+(20.6, 6, 'maza345', 'MAZAlocal'),
+(21.1, 8, 'mountdew123', 'Mountain Dewe'),
+(22.9, 9, 'drpepper432', 'Dr Pepper'),
+(23.5, 1, 'pepsi290', 'Pepsilocalone'),
+(24.4, 3, 'maza678', 'MAZAlcal'),
+(25.6, 7, 'cocacola112', 'COCACOLA'),
+(26.2, 5, 'sprite778', 'Spritenew'),
+(27.9, 2, 'fanta990', 'Fanta'),
+(28.4, 4, 'mountdew432', 'Mountain Dew'),
+(29.1, 8, 'drpepper123', 'Dr Pepper'),
+(30.5, 6, 'pepsi345', 'Pepsia'),
+(31.2, 9, 'fanta234', 'Fantaa'),
+(32.8, 7, 'cocacola345', 'COCACOLAC'),
+(33.9, 5, 'sprite990', 'Spritee'),
+(34.3, 2, 'maza789', 'MAZAA'),
+(35.6, 1, 'drpepper567', 'Dr Pepperr'),
+(36.7, 4, 'mountdew567', 'Mountain Deww');
