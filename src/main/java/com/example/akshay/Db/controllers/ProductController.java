@@ -24,14 +24,14 @@ public class ProductController {
         this.productRepository=productRepository;
     }
 
-//    @GetMapping
+//   @GetMapping
 //    public List<ProductEntity> getAllProducts(@RequestParam(defaultValue = "id")String sortBy){
 //        return productRepository.findBy(Sort.by(Sort.Direction.DESC,sortBy));
 //    }
 
     @GetMapping
     public List<ProductEntity> getAllProducts(@RequestParam(defaultValue = "id")String sortBy, @RequestParam(defaultValue = "1") Integer pageNumber){
-        Pageable pageable= PageRequest.of(pageNumber,pageSize);
+        Pageable pageable= PageRequest.of(pageNumber,pageSize,Sort.by(sortBy));
         return productRepository.findAll(pageable).getContent();
     }
 }
